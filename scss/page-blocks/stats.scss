@@ -1,0 +1,32 @@
+.stats {
+	background: url('../img/stats-bg.svg') bottom left no-repeat;
+	background-size: contain;
+	padding-top: 100px;
+
+	&__img {
+		position: relative;
+
+		img {
+			position: absolute;
+			right: 0;
+			top: 0;
+			z-index: 5;
+		}
+	}
+}
+
+.stats-info {
+	&__item {
+		strong {
+			font-weight: 300;
+			font-size: 110px;
+			line-height: 140%;
+			color: #D71E6C;
+		}
+		p {
+			font-weight: 500;
+			font-size: 20px;
+			color: #2E2363;
+		}
+	}
+}

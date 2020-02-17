@@ -1,0 +1,15 @@
+body {
+  font-weight: 400;
+  position: relative;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+    opacity: .8;
+  }
+}

@@ -1,0 +1,53 @@
+.programm {
+	background: url('../img/programm-bg.svg') top left no-repeat;
+	background-size: contain;
+	padding-top: 150px;
+	position: relative;
+	&:before {
+		content: "";
+	    top: 800px;
+	    left: 60px;
+	    width: 300px;
+	    height: 490px;
+	    position: absolute;
+	    background: url(../img/program-icon.svg) 0 0 no-repeat;
+	    background-size: 100%;
+	    z-index: 5;
+	}
+
+	h2 {
+		font-weight: 800;
+		font-size: 45px;
+		color: #3F327A;
+		margin-bottom: 150px;
+	}
+
+	&__pre-title {
+		font-weight: 800;
+		font-size: 25px;
+		text-align: center;
+		color: #D71E6C;
+		border-bottom: 2px solid #D71E6C;
+		margin: 30px 0 0;
+		&--last {
+			border-bottom: none;
+		}
+	}
+	&__info {
+		border-bottom: 2px solid #D71E6C;
+		margin: 30px 0 0;
+		&--last {
+			border-bottom: none;
+		}
+	}
+	&__title {
+		font-weight: 800;
+		font-size: 25px;
+		line-height: 30px;
+		color: #3F327A;
+		margin-bottom: 30px;
+	}
+	&__descr {
+		margin-bottom: 30px;
+	}
+}

@@ -1,0 +1,129 @@
+.speakers-title {
+	position: relative;
+
+	&:before {
+		content: "";
+	    position: absolute;
+	    bottom: 0;
+	    right: 0;
+	    width: 100%;
+	    height: 600px;
+	    background: url(../img/speakers-bg.svg) right bottom no-repeat;
+	    background-size: contain;
+	}
+
+	h2 {
+		font-weight: 800;
+		font-size: 45px;
+		text-align: right;
+		color: #D71E6C;
+		margin: 150px 0 60px 0;
+	}
+}
+
+.speakers {
+	background: #8B77E8;
+	padding: 30px 0 120px 0;
+}
+
+.speaker {
+	text-align: center;
+	color: #fff;
+	margin-bottom: 30px;
+
+	&__name {
+		font-weight: 800;
+		font-size: 20px;
+		margin-top: 30px;
+	}
+
+	&__about {
+		font-weight: 600;
+		font-size: 15px;
+		line-height: 1.3;
+		max-width: 300px;
+		margin: 30px auto 0 auto;
+	}
+
+	&__img {
+		position: relative;
+		max-height: 222px;
+		max-width: 222px;
+		margin: 0 auto;
+		img {
+			position: relative;
+			z-index: 5;
+		}
+		&:before {
+			content: "";
+		    position: absolute;
+		    z-index: 2;
+		}
+	}
+
+	&-bezyaev {
+		&:before {
+			width: 144px;
+		    height: 144px;
+			bottom: 5px;
+    		left: -10px;
+    		background: url(../img/speaker-icon1.svg) right bottom no-repeat;
+    		background-size: cover;
+		}
+	}
+
+	&-slavyanskaya {
+		&:before {
+			width: 134px;
+		    height: 134px;
+			top: -5px;
+    		left: -10px;
+    		background: url(../img/speaker-icon2.svg) right bottom no-repeat;
+    		background-size: cover;
+		}
+	}
+
+	&-zamishlyaev {
+		&:before {
+			width: 180px;
+		    height: 180px;
+			bottom: -5px;
+    		left: -10px;
+    		background: url(../img/speaker-icon3.svg) right bottom no-repeat;
+    		background-size: cover;
+		}
+	}
+
+	&-vershinin {
+		&:before {
+			width: 147px;
+		    height: 147px;
+			top: 5px;
+    		right: -10px;
+    		background: url(../img/speaker-icon3.svg) right bottom no-repeat;
+    		background-size: cover;
+		}
+	}
+
+	&-selevich {
+		&:before {
+			width: 160px;
+		    height: 160px;
+			right: -13px;
+    		bottom: 10px;
+    		background: url(../img/speaker-icon1.svg) right bottom no-repeat;
+    		background-size: cover;
+		}
+	}
+
+	&-iskandirova {
+		&:before {
+			width: 90px;
+		    height: 90px;
+		    top: -5px;
+		    right: -10px;
+    		background: url(../img/speaker-icon2.svg) right bottom no-repeat;
+    		background-size: cover;
+		}
+	}
+}
