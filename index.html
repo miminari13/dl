@@ -26,7 +26,7 @@
 			</div>
 		</div>
 	</div>
-	<header class="header">
+	<header class="header" style="position: relative; z-index: 10">
 		<div class="container">
 			<div class="row align-items-end">
 				<div class="col-12 col-md-6">
@@ -35,7 +35,7 @@
 					<h3>Создаём будущее. Стираем границы. Соединяем идеи.</h3>
 
 					<div class="header__time">19 марта с 9:30 до 18:00</div>
-					<a href="#" class="header__btn">Принять участие</a>
+					<a href="#join" class="header__btn">Принять участие</a>
 					<div class="header__help">Количество мест ограничено</div>
 				</div>
 				<div class="col-12 col-md-6">
@@ -447,7 +447,7 @@
 			</div>
 		</div>
 	</section>
-	<section class="conference" id="place">
+	<section class="conference" id="join">
 		<div class="container">
 			<div class="row">
 				<h2 class="col-12">Вторая конференция-встреча участников сообщества «Digital Learning»</h2>
@@ -456,10 +456,13 @@
 			</div>
 			<div class="row">
 				<div class="col-12 col-md-4">
-					<form action="" class="conference__form ">
+					<form action="" class="conference__form">
 
-						<label for="apply-name">Ваши имя и фамилия</label>
-						<input type="text" id="apply-name" placeholder="Иван Иванов" />
+						<label for="apply-name">Ваше имя</label>
+						<input type="text" id="apply-name" placeholder="Иван Николаевич" />
+
+						<label for="apply-surname">Ваша фамилия</label>
+						<input type="text" id="apply-surname" placeholder="Иванов" />
 
 						<label for="apply-email">E-mail</label>
 						<input type="text" id="apply-email" placeholder="pochta@pochta.com" />
@@ -478,6 +481,7 @@
 						<button class="conference__submit mt-3" id="submit">Зарегистрироваться</button>
 
 					</form>
+					<div class="timepad-widget mt-5 d-none"></div>
 					<div class="mt-5 mx-auto d-none alert alert-success">
 						<strong>Спасибо за Вашу заявку!</strong><br>
 						Мы свяжемся с Вами в ближайшее время
