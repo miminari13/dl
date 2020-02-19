@@ -9,7 +9,8 @@
 		$$key = isset($_POST[ $key ]) ? $_POST[ $key ] : null;
 	}
 
-	$f = fopen("data.csv", "aw");
+	$f = fopen("data.csv", "w");
+	fputs($f, chr(0xEF) . chr(0xBB) . chr(0xBF));
 	fputcsv($f, [
 		$today,
 		$name,
