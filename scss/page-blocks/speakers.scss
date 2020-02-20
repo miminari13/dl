@@ -1,5 +1,6 @@
 .speakers-title {
 	position: relative;
+	z-index: 20;
 
 	&:before {
 		content: "";
@@ -9,7 +10,7 @@
 	    width: 100%;
 	    height: 600px;
 	    background: url(../img/speakers-bg.svg) right bottom no-repeat;
-	    background-size: contain;
+	    background-size: inherit;
 	}
 
 	h2 {
@@ -53,6 +54,7 @@
 		img {
 			position: relative;
 			z-index: 5;
+			max-width: 100%;
 		}
 		&:before {
 			content: "";
@@ -125,5 +127,31 @@
     		background: url(../img/speaker-icon2.svg) right bottom no-repeat;
     		background-size: cover;
 		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.speakers {
+		padding: 30px 0 60px 0;
+	}
+	.speakers-title {
+		&:before {
+		    background-size: contain;
+		}
+	}
+	.speaker {
+		&__name,
+		&__about {
+			margin-top: 20px;
+		}
+
+		&__name {
+			font-size: 16px;
+		}
+
+		&__about {
+			font-size: 12px;
+		}
+		
 	}
 }

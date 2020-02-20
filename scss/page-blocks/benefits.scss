@@ -77,3 +77,46 @@
 		}
 	}
 }
+
+
+@media screen and (max-width: 992px) {
+	.benefits-partners {
+		margin-bottom: 60px;
+	}
+	.benefits {
+		h2 {
+			font-weight: 800;
+			font-size: 24px;
+			color: #D71E6C;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+@media screen and (max-width: 768px) {
+	.benefits-info {
+		&--for {
+			p {
+				font-size: 15px;
+			}
+		}
+		&--users {
+			p {
+				font-size: 15px;
+			}
+		}
+		p {
+			font-size: 15px;
+			font-weight: 500;
+			margin-bottom: 0;
+		}
+		&--highlight {
+			p {
+			    font-size: 15px;
+			    color: #2e2363;
+			    font-weight: 500;
+			}
+		}
+	}
+}

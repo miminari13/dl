@@ -24,10 +24,12 @@
 		font-style: normal;
 		font-weight: 800;
 		font-size: 55px;
-		line-height: 1;
+		line-height: 35px;
 		color: #D71E6C;
+		margin-right: 60px;
+		margin-bottom: 60px;
 		span {
-			font-size: 40px;
+			font-size: 35px;
 		}
 	}
 }
@@ -44,8 +46,8 @@
 .about-list {
 	&__item {
 		font-weight: 800;
-		font-size: 25px;
-		line-height: 30px;
+		font-size: 20px;
+		line-height: 1.4;
 		color: #2E2363;
 
 		span {
@@ -58,5 +60,56 @@
 			margin: -35px 30px 0 0;
 		}
 
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.about-title {
+		&__sub-title {
+			font-weight: 800;
+			font-size: 25px;
+			line-height: 30px;
+			color: #3F327A;
+			margin-bottom: 30px;
+			margin-right: 0;
+			strong, span {
+				
+			}
+			span {
+				font-size: 25px;
+				line-height: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 992px) {
+	.about-title {
+		h2 {
+			font-weight: 800;
+			font-size: 24px;
+			color: #D71E6C;
+			margin-bottom: 20px;
+		}
+		
+	}
+	.about-list {
+		&__item {
+			font-size: 15px;
+			line-height: 20px;
+			span {
+				min-width: 50px;
+			    font-size: 90px;
+			    margin: -60px 30px 0 0;
+			}
+		}
+	}
+	.about-info {
+		&__img {
+			img {
+				max-width: 100%;
+				transform: scale(-1, 1) ;
+			}
+		}
 	}
 }

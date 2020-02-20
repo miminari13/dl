@@ -1,8 +1,9 @@
 .programm {
-	background: url('../img/programm-bg.svg') top left no-repeat;
+	background: transparent url('../img/programm-bg.svg') top left no-repeat;
 	background-size: contain;
 	padding-top: 150px;
 	position: relative;
+	margin: -3px 0 0 0;
 	&:before {
 		content: "";
 	    top: 800px;
@@ -20,6 +21,9 @@
 		font-size: 45px;
 		color: #3F327A;
 		margin-bottom: 150px;
+		span {
+			display: none;
+		}
 	}
 
 	&__pre-title {
@@ -49,5 +53,80 @@
 	}
 	&__descr {
 		margin-bottom: 30px;
+	}
+	&__btn {
+		
+	    margin-top: 40px;
+	    text-align: center;
+	    div {
+	    	cursor: pointer;
+	    	background: #3F327A;
+			color: #fff;
+			display: inline-block;
+		    font-weight: 800;
+		    font-size: 18px;
+		    padding: 24px 45px;
+		    position: relative;
+		    z-index: 100;
+	    }
+	}
+	&__fulllist {
+		display: none;
+		&.open {
+			display: block;
+		}
+	}
+}
+
+@media screen and (max-width: 1200px) {
+	.programm {
+		&:before {
+			display: none;
+		}
+	}
+}
+@media screen and (max-width: 992px) {
+	.programm {
+		h2 {
+			margin-bottom: 40px;
+			padding-top: 0;
+			padding-bottom: 0;
+			font-size: 20px;
+			color: #D71E6C;
+			span {
+				display: inline-block;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.programm {
+		h2 {
+			margin-bottom: 20px;
+    		font-size: 24px;
+		}
+		&__title {
+			font-size: 15px;
+			margin-bottom: 10px;
+			&--break {
+				color: #D71E6C;
+			}
+		} 
+		&__pre-title {
+			font-weight: 600;
+			font-size: 15px;
+			text-align: left;
+			color: #3F327A;
+			padding-top: 0;
+			padding-bottom: 20px;
+		}
+		&__info {
+			border-bottom: none;
+			margin: 20px 0 0;
+			padding-top: 0;
+			padding-bottom: 0;
+			margin-bottom: 30px;
+		}
 	}
 }
