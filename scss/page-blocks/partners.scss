@@ -13,12 +13,13 @@
 	&__list {
 		flex-wrap: wrap;
 		div {
-			margin-bottom: 10px;
+			margin: 0 10px 10px 10px;
 			&:first-child {
 				max-width: 200px;
 			}
 			img {
 				max-width: 100%;
+				max-height: 50px;
 			}
 		}
 	}
