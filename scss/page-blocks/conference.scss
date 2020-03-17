@@ -30,11 +30,30 @@
 		line-height: 1.2;
 	}
 
-	&__time {
+	&__time,
+	&__link a {
 		font-weight: 900;
 		font-size: 30px;
 		color: #D71E6C;
 		margin-top: 30px;
+	}
+
+	&__link a {
+		position: relative;
+		padding-left: 60px;
+		&:before {
+		    content: "►";
+		    color: #fff;
+		    position: absolute;
+		    top: -5px;
+		    font-size: 30px;
+		    left: 0;
+		    border-radius: 50%;
+		    height: 46px;
+		    padding-left: 5px;
+		    width: 46px;
+		    border: 1px solid #fff;
+		}
 	}
 
 	&__address {
@@ -62,6 +81,18 @@
 			box-shadow: none;
 			padding: 12px;
 			color: #fff;
+		}
+	}
+
+	&__info {
+		justify-content: center;
+	    flex-direction: column;
+
+		h3 , p {
+			margin-bottom: 1.5rem;
+		}
+		p {
+			text-indent: 15px;
 		}
 	}
 

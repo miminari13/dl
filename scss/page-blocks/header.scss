@@ -87,6 +87,36 @@
 	}
 }
 
+.h-broadcast {
+	position: relative;
+
+	&__link {
+		position: absolute;
+		z-index: 10;
+		color: #3f327a;
+		left: 50%;
+		bottom: 30px;
+		transform: translate(-50%, 0);
+		width: 150px;
+		height: 150px;
+		background: #FFCC46;
+		border-radius: 50%;
+		box-shadow: 0 0 10px rgba(0,0,0,0.5);
+	    &:before {
+			content: "►";
+			position: absolute;
+			font-size: 80px;
+			left: 54%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+	    }
+
+	    &:hover {
+			opacity: .95;
+	    }
+	}
+}
+
 
 @media screen and (max-width: 992px) {
 	.header {
